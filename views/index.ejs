@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="icon" type="image/x-icon" href="./assets/logo/Daymens logo.png" />
+  <script src="https://kit.fontawesome.com/4d4f615713.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/style/style.css" />
+  <style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav.navbar {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+</style>
+
+  <title>Daymen's Lab</title>
+</head>
+
+<body>
+
+  <section>
+ 
+  <nav class="navbar navbar-light bg-light ">
+  <div class="container-fluid d-flex justify-content-end">
+    <ul class="navbar-nav d-flex flex-row align-items-center">
+      <% if (session && session.admin) { %>
+        <li class="nav-item">
+          <a class="btn btn-danger ms-2" href="/logout">Logout</a>
+        </li>
+      <% } else { %>
+        <li class="nav-item">
+          <a class="btn btn-primary ms-2" href="/login">Login</a>
+        </li>
+      <% } %>
+    </ul>
+  </div>
+</nav>
+
+<div class="d-flex justify-content-between" style="height: 32px; background-color: #020266; color: white">
+    <div class="text_float_sec">
+        <h6 class="textLefttoRight">
+            New Update : <i class="fa-solid fa-bullhorn"></i> 
+        </h6>
+    </div>
+
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./assets/logo/Daymens logo.png" class="logo ms-5" alt="navbar" />
+        </a>
+        <h6 class="text_logo">Daymen's <span>Laboratory</span></h6>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./description">Description</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./service">Services</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav> 
+ </section>
+
+
+  <section>
+
+<div class="home_section" id="Home">
+    <div class="">
+        <img src="./assets/images/front/Home_page.png" alt="HomePage" />
+    </div>
+    <div class="home_text_div">
+        <p class="" style="color: white; font-size: 26px">
+            Daymen's Laboratory  <br>
+            <p class="text-white">"Trust in science, thrive for quality and excel through services"</p>
+        </p>
+        <p class="" style="color: white">
+        </p>
+    </div>
+</div>  </section>
+  <!-- aboute section -->
+  <section class="section_aboute" id="Aboute">
+    <div class="section_all_card">
+      <div class="card about_toppara">
+        <div class="aboute_card">
+          <div class="" style="max-width: 50rem">
+            <div class="">
+              <p class="card-text p_data_section">
+                <span class="text-uppercase text-2xl upper_latter" style="color: #020266">
+                  Welcome to Daymen’s Laboratories</span>
+                , your premier destination for comprehensive analytical and
+                research services in herbal medicine, food and beverages, and
+                beyond. Our state-of-the-art facility is also dedicated to
+                extended analytical capabilities include basic analytical
+                methods, advanced chromatographic and spectroscopic data
+                interpretation, impurity detection and isolation. We are
+                equipped to support data illustration related to
+                bio-informatic or computational biology and statistical
+                analysis using advance computational tools. We are committed
+                for fostering specialized training and advising research for
+                PhD scholars, as well as for graduate and postgraduate
+                students, to help them successfully complete their research
+                projects. Our expert team offers guidance on all aspects of
+                scientific writing, including research and review writing and
+                publication in indexed or high-impact journals. Additionally,
+                we offer comprehensive training programs at both postgraduate
+                and doctoral levels to enhance research and writing skills and
+                ensuring efficient communication of research findings. Beyond
+                analytical and writing services, We provide procurement
+                services for herbal raw materials, ensuring the highest
+                quality and authenticity for your research needs. Our mission
+                is to facilitate your scientific endeavors or research journey
+                and help you to achieve your academic and professional goals.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="max-width: 26rem">
+            <div class="card-body">
+              <img style="max-width: 21rem; border-radius: 8px" class="text_img_sec"
+                src="https://img.freepik.com/free-photo/laboratory-3d-glassware_23-2151560647.jpg?t=st=1725427074~exp=1725430674~hmac=be1dab6b1e0c540b79ca1c7a14930782fe454e30c2666455c02a3e64a46b45c2&w=740"
+                alt="about_sec" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission and Vision -->
+  <section class="mission_vision" id="Mission">
+    <div class="mission_flex_sec">
+      <div class="g-0">
+        <div class="mission_image" style="width: 28rem">
+          <img src="./assets/images/mission/missionsection.jpg" class="img-fluid rounded-start" alt="..."
+            style="width: 28rem" />
+        </div>
+        <!-- <div class="mission_fixed" style="width: 24rem">
+            <img
+              src="https://img.freepik.com/free-vector/illustration-business-mission_53876-37670.jpg?t=st=1724652320~exp=1724655920~hmac=fcab81077bf2852283db228a54c45a9ca08bba3243d2f3671d06883ab512d675&w=900"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div> -->
+      </div>
+      <div class="card">
+        <div class="card-body ms-3">
+          <h5 class="card-title ms-1">Our Mission</h5>
+          <ul>
+            <li>Detailed analytical data interpretation.</li>
+            <li>
+              Chromatographic and spectroscopic illustrations. Statistical
+              analysis.
+            </li>
+            <li>Molecular docking analysis.</li>
+            <li>Network pharmacology analysis.</li>
+          </ul>
+        </div>
+        <div class="card-body ms-3">
+          <h5 class="card-title ms-1">Our Vision</h5>
+          <ul>
+            <li>
+              Cultivate knowledgeable, scientifically proficient pharma
+              scientists.
+            </li>
+            <li>
+              Chromatographic and spectroscopic illustrations. Statistical
+              analysis.
+            </li>
+            <li>Molecular docking analysis.</li>
+            <li>Network pharmacology analysis.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section services-->
+  <section id="Features">
+    <h3>Services</h3>
+
+    <div class="pt-9">
+      <h3>Analysis of Chemicals, Herbs, and Food and Beverage Products</h3>
+      <div class="card_services">
+        <!-- div_one -->
+        <div class="card mb-10 card_section_services" style="width: 21rem">
+          <img src="./assets/images/features/bps-1.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">
+              Pharmacopoeial standards for herbals and their derived products
+            </h5>
+
+          </div>
+        </div>
+        <!-- div_two -->
+        <div class="card mb-3 card_section_services" style="width: 21rem">
+          <img src="./assets/images/features/bps-2.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title card_title">
+              Analytical Method Development and Validation
+            </h5>
+
+          </div>
+        </div>
+        <!-- div_three -->
+        <div class="card mb-3 card_section_services" style="width: 21rem">
+          <img src="./assets/images/features/bps-3.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title mt-5">
+              Proximate composition of foods and beverage products
+            </h5>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pt-9">
+      <!-- div card two section -->
+      <h3>Isolation and Procurement Services</h3>
+      <div class="card_services">
+        <!-- div_one -->
+        <div class="card mb-10 card_section_services" style="width: 21rem">
+          <img src="./assets/images/features/ip-1.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title mt-2">
+              Isolation of bioactive components/impurity isolation.
+            </h5>
+
+          </div>
+        </div>
+        <!-- div_two -->
+        <div class="card mb-3 card_section_services" style="width: 21rem">
+          <img src="./assets/images/features/ip-2.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">
+              Procurement of herbal raw materials, ensuring quality and
+              authenticity.
+            </h5>
+
+          </div>
+        </div>
+        <!-- div_three -->
+        <div class="card mb-3 card_section_services" style="width: 21rem">
+          <img src="./assets/images/features/ip-3.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title mt-3">Procurement of plant extract</h5>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pt-9">
+      <h3>Training and Advising for Scholars</h3>
+      <!-- card three div section -->
+      <div class="card_services">
+        <!-- div_one -->
+
+        <div class="card mb-10 card_section_services" style="width: 21rem">
+          <img src="./assets/images/features/ta-1.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">
+              Specialized training and advising for master's and PhD scholars.
+            </h5>
+
+          </div>
+        </div>
+        <!-- div_two -->
+        <div class="card mb-3 card_section_services" style="width: 21rem">
+          <img src="./assets/images/features/ta-2.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">
+              Hands on practice training program at under graduates, post
+              graduates and doctorate level belongs to pharmaceutical or
+              allied science.
+            </h5>
+
+          </div>
+        </div>
+        <!-- div_three -->
+        <div class="card mb-3 card_section_services" style="width: 21rem">
+          <img src="./assets/images/features/ta-3.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title mt-3">
+              Comprehensives to research ethics includes research design and
+              implementation
+            </h5>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- card four section -->
+    <div style="margin-bottom: 20px">
+      <h3>Scientific Writing Services</h3>
+      <div class="card_services">
+        <div class="card mb-10 card_section_services" style="width: 21rem">
+          <img src="./assets/images/features/sw-1.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">
+              Professional scientific writing services for research and review
+              papers.
+            </h5>
+
+          </div>
+        </div>
+        <!-- div_two -->
+        <div class="card mb-3 card_section_services" style="width: 21rem">
+          <img src="./assets/images/features/sw-2.jpeg.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">
+              Assistance with publication in indexed or high-impact score
+              journals.
+            </h5>
+
+          </div>
+        </div>
+        <!-- div_three -->
+        <div class="card mb-3 card_section_services" style="width: 21rem">
+          <img src="./assets/images/features/sw-3.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title mt-4">
+              Thesis writing services for postgraduate or doctorate levels.
+            </h5>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- div_one -->
+    <!-- <h5>Training and Advising for Scholars:</h5> -->
+  </section>
+
+  <!-- Additional services -->
+  <section class="mission_vision" id="Mission">
+    <div class="mission_flex_sec">
+      <div class="g-0">
+        <div class="mission_image" style="width: 32rem">
+          <img src="./assets/images/features/additional_services.png" class="img-fluid rounded-start" alt="..."
+            style="width: 32rem; margin-top: 23px" />
+        </div>
+      </div>
+      <div class="card">
+        <div class="service_content card">
+          <div class="card-body">
+            <h5 class="card-title">Additional Services</h5>
+            <ul>
+              <li>Detailed analytical data interpretation.</li>
+              <li>
+                Chromatographic and spectroscopic illustrations. Statistical
+                analysis.
+              </li>
+              <li>Molecular docking analysis.</li>
+              <li>Network pharmacology analysis.</li>
+            </ul>
+            <p class="card-text">
+              Daymen’s Laboratories is dedicated to facilitating these
+              services and helping clients achieve their academic and
+              professional goals
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="Contact">
+    <div class="content">
+      <h3 class="ms-4 mt-5">Contact Us</h3>
+    </div>
+    <!-- laoder section
+      -->
+<section>
+    <div id="loader" class="center"></div>
+</section>
+
+<section class="section_footer">
+    <div class="nav_address">
+        <div>
+            <img src="./assets/logo/Daymens logo.png" class="logo_footer" alt="footer" />
+        </div>
+
+        <div class="ms-2">
+            <b>Address:</b>
+            <p style="color: #484747">
+                Dhaulana, Near Bus stand, District Hapur-245301,
+                <br />
+                Uttar Pradesh, India <br />
+                Phone: +91 8470052097, 8077391636, 9756983971 <br />
+
+                <i class="fa-solid fa-envelope" style="color: #00b400"></i>
+                <a href="dayashwatilab202404@gmail.com">
+                    <b> dayashwatilab202404@gmail.com </b>
+                </a>
+            </p>
+        </div>
+        <br />
+        <div class="ms-2">
+            <b>Working Hours</b>
+            <p style="color: #484747">
+                <i class="fa-solid fa-square-check" style="color: #00b400"></i>
+
+                Monday To Saturday
+                <br />
+                <i class="fa-solid fa-square-check" style="color: #00b400"></i> 9 am
+                To 6 pm
+                <br />
+                <i class="fa-solid fa-square-xmark" style="color: #00b400"></i>
+                Sunday Closed
+            </p>
+        </div>
+        <div class="footer_list">
+            <ul>
+                <li class="items_li"><a href="./">Home</a></li>
+                <li class="items_li"><a href="./about">About</a></li>
+                <li class="items_li">
+                    <a href="./description">Description</a>
+                </li>
+                <li class="items_li"><a href="./service">Services </a></li>
+
+                <li class="items_li"><a href="./contact">Contact</a></li>
+            </ul>
+            <div class="d-flex gap-4 align-items-center">
+                <div class="ms-auto">
+                    <a class="socials_tags_one" href="https://www.facebook.com/profile.php?id=61560019645151"
+                        target="_blank">
+                        <i class="fa-brands fa-square-facebook fa-2x"></i></a>
+                </div>
+
+                <div>
+                    <a class="socials_tags_two" href="https://www.instagram.com/dayashwati042024/?next=%2F"
+                        target="_blank">
+                        <i class="fa-brands fa-square-instagram fa-2x"></i></a>
+                </div>
+                <div>
+                    <a class="socials_tags_three" href="mailto: dayashwatilab202404@gmail.com">
+                        <i class="fa-solid fa-envelope fa-2x"></i></a>
+                </div>
+
+                <div>
+                    <a class="socials_tags_four" href="https://wa.me/7302473574" target="_blank"><i
+                            class="fa-brands fa-square-whatsapp fa-2x"></i></a>
+                </div>
+                <div>
+                    <a class="socials_tags_five" href="https://www.linkedin.com/in/daymen-s-laboratory-a25537326/"
+                        target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="d-flex justify-content-between">
+        <div class="">
+            <p style="margin-left: 10px">
+                Disclaimer | Privacy Policy | Terms of Services
+            </p>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script>
+    document.onreadystatechange = function () {
+        if (document.readyState !== "complete") {
+            document.querySelector("body").style.visibility = "hidden";
+            document.querySelector("#loader").style.visibility = "visible";
+        } else {
+            document.querySelector("#loader").style.display = "none";
+            document.querySelector("body").style.visibility = "visible";
+        }
+    };
+</script>
+  </section>
+
+
+<section class="section_footer">
+    <div class="nav_address">
+        <div>
+            <img src="./assets/logo/Daymens logo.png" class="logo_footer" alt="footer" />
+        </div>
+
+        <div class="ms-2">
+            <b>Address:</b>
+            <p style="color: #484747">
+                Dhaulana, Near Bus stand, District Hapur-245301,
+                <br />
+                Uttar Pradesh, India <br />
+                Phone: +91 8470052097, 8077391636, 9756983971 <br />
+
+                <i class="fa-solid fa-envelope" style="color: #00b400"></i>
+                <a href="dayashwatilab202404@gmail.com">
+                    <b> dayashwatilab202404@gmail.com </b>
+                </a>
+            </p>
+        </div>
+        <br />
+        <div class="ms-2">
+            <b>Working Hours</b>
+            <p style="color: #484747">
+                <i class="fa-solid fa-square-check" style="color: #00b400"></i>
+
+                Monday To Saturday
+                <br />
+                <i class="fa-solid fa-square-check" style="color: #00b400"></i> 9 am
+                To 6 pm
+                <br />
+                <i class="fa-solid fa-square-xmark" style="color: #00b400"></i>
+                Sunday Closed
+            </p>
+        </div>
+        <div class="footer_list">
+            <ul>
+                <li class="items_li"><a href="./">Home</a></li>
+                <li class="items_li"><a href="./about">About</a></li>
+                <li class="items_li">
+                    <a href="./description">Description</a>
+                </li>
+                <li class="items_li"><a href="./service">Services </a></li>
+
+                <li class="items_li"><a href="./contact">Contact</a></li>
+            </ul>
+            <div class="d-flex gap-4 align-items-center">
+                <div class="ms-auto">
+                    <a class="socials_tags_one" href="https://www.facebook.com/profile.php?id=61560019645151"
+                        target="_blank">
+                        <i class="fa-brands fa-square-facebook fa-2x"></i></a>
+                </div>
+
+                <div>
+                    <a class="socials_tags_two" href="https://www.instagram.com/dayashwati042024/?next=%2F"
+                        target="_blank">
+                        <i class="fa-brands fa-square-instagram fa-2x"></i></a>
+                </div>
+                <div>
+                    <a class="socials_tags_three" href="mailto: dayashwatilab202404@gmail.com">
+                        <i class="fa-solid fa-envelope fa-2x"></i></a>
+                </div>
+
+                <div>
+                    <a class="socials_tags_four" href="https://wa.me/7302473574" target="_blank"><i
+                            class="fa-brands fa-square-whatsapp fa-2x"></i></a>
+                </div>
+                <div>
+                    <a class="socials_tags_five" href="https://www.linkedin.com/in/daymen-s-laboratory-a25537326/"
+                        target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="d-flex justify-content-between">
+        <div class="">
+            <p style="margin-left: 10px">
+                Disclaimer | Privacy Policy | Terms of Services
+            </p>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script>
+    document.onreadystatechange = function () {
+        if (document.readyState !== "complete") {
+            document.querySelector("body").style.visibility = "hidden";
+            document.querySelector("#loader").style.visibility = "visible";
+        } else {
+            document.querySelector("#loader").style.display = "none";
+            document.querySelector("body").style.visibility = "visible";
+        }
+    };
+</script>
+
+</body>
+
+</html>
