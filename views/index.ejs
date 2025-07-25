@@ -15,10 +15,6 @@
     padding: 0;
   }
 
-  nav.navbar {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-  }
 </style>
 
   <title>Daymen's Lab</title>
@@ -26,68 +22,62 @@
 
 <body>
 
-  <section>
- 
-  <nav class="navbar navbar-light bg-light ">
-  <div class="container-fluid d-flex justify-content-end">
-    <ul class="navbar-nav d-flex flex-row align-items-center">
-      <% if (session && session.admin) { %>
-        <li class="nav-item">
-          <a class="btn btn-danger ms-2" href="/logout">Logout</a>
-        </li>
-      <% } else { %>
-        <li class="nav-item">
-          <a class="btn btn-primary ms-2" href="/login">Login</a>
-        </li>
-      <% } %>
-    </ul>
-  </div>
-</nav>
-
-<div class="d-flex justify-content-between" style="height: 32px; background-color: #020266; color: white">
-    <div class="text_float_sec">
-        <h6 class="textLefttoRight">
-            New Update : <i class="fa-solid fa-bullhorn"></i> 
-        </h6>
+ <section class="p-0 m-0"> <!-- Ensure no extra space -->
+  
+  <!-- Top Right Login/Logout Nav -->
+  <nav class="navbar navbar-light bg-light py-1">
+    <div class="container-fluid d-flex justify-content-end">
+      <ul class="navbar-nav d-flex flex-row align-items-center mb-0">
+        <% if (session && session.admin) { %>
+          <li class="nav-item">
+            <a class="btn btn-danger ms-2" href="/logout">Logout</a>
+          </li>
+        <% } else { %>
+          <li class="nav-item">
+            <a class="btn btn-primary ms-2" href="/login">Login</a>
+          </li>
+        <% } %>
+      </ul>
     </div>
+  </nav>
 
-</div>
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Main Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="./assets/logo/Daymens logo.png" class="logo ms-5" alt="navbar" />
-        </a>
-        <h6 class="text_logo">Daymen's <span>Laboratory</span></h6>
+      <a class="navbar-brand" href="#">
+        <img src="./assets/logo/Daymens logo.png" class="logo ms-5" alt="navbar" />
+      </a>
+      <h6 class="text_logo">Daymen's <span>Laboratory</span></h6>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./about">About</a>
-                </li>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="./description">Description</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="./service">Services</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="./contact">Contact</a>
-                </li>
-            </ul>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./description">Description</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./service">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-</nav> 
- </section>
+  </nav>
+
+</section>
+
 
 
   <section>
